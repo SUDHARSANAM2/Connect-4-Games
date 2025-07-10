@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Connect Four</h1>
+        
+        <div class="game-info">
+            <div class="current-player">
+                Current Player: <span id="current-player-text">Player 1</span>
+                <span id="player-indicator" class="player-indicator player1"></span>
+            </div>
+            <button class="reset-btn" onclick="resetGame()">New Game</button>
+        </div>
+
+        <div class="game-board">
+            <div class="column-indicator" id="column-indicator"></div>
+            <div class="board-grid" id="board-grid"></div>
+        </div>
+
+        <div class="game-status" id="game-status"></div>
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
